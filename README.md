@@ -1,6 +1,17 @@
 ## About
 
-This template shows how to create a web app using Yew and wasm-pack. 
+This template shows how to create element ui components from yew.
+
+todo components:
+- [x] Row
+- [x] Col
+- [ ] Container
+- [ ] Header
+- [ ] Aside
+- [ ] Main
+- [ ] Footer
+- [ ] Button
+- [ ] Link
 
 ## 🚴 Usage
 
