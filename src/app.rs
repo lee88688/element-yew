@@ -1,6 +1,6 @@
 use log::*;
 use yew::{prelude::*};
-use crate::components::{col::Col, row::{Row, RowType}};
+use crate::components::{header::Header, container::Container, footer::Footer, aside::Aside, main::Main};
 
 // const KEY: &str = "yew.todomvc.self";
 
@@ -30,10 +30,57 @@ impl Component for App {
         info!("rendered!");
         html! {
             <div>
-                <Row gutter=20 dtype=RowType::Flex>
-                    <Col span=2>{1}</Col>
-                    <Col span=3 offset=6>{2}</Col>
-                </Row>
+                <Container>
+                    <Header height="400px">{"Header"}</Header>
+                    <Main>{"Main"}</Main>
+                </Container>
+
+                <Container>
+                    <Header>{"Header"}</Header>
+                    <Main>{"Main"}</Main>
+                    <Footer height="400px">{"Footer"}</Footer>
+                </Container>
+
+                <Container>
+                    <Aside width="200px">{"Aside"}</Aside>
+                    <Main>{"Main"}</Main>
+                </Container>
+                
+                <Container>
+                    <Header>{"Header"}</Header>
+                    <Container>
+                        <Aside width="200px">{"Aside"}</Aside>
+                        <Main>{"Main"}</Main>
+                    </Container>
+                </Container>
+                
+                <Container>
+                    <Header>{"Header"}</Header>
+                    <Container>
+                    <Aside width="200px">{"Aside"}</Aside>
+                    <Container>
+                        <Main>{"Main"}</Main>
+                        <Footer>{"Footer"}</Footer>
+                    </Container>
+                    </Container>
+                </Container>
+                
+                <Container>
+                    <Aside width="200px">{"Aside"}</Aside>
+                    <Container>
+                    <Header>{"Header"}</Header>
+                    <Main>{"Main"}</Main>
+                    </Container>
+                </Container>
+                
+                <Container>
+                    <Aside>{"Aside"}</Aside>
+                    <Container>
+                    <Header>{"Header"}</Header>
+                    <Main>{"Main"}</Main>
+                    <Footer>{"Footer"}</Footer>
+                    </Container>
+                </Container>
             </div>
         }
     }

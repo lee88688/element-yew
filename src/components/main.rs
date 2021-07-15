@@ -2,20 +2,17 @@ use yew::prelude::*;
 use yew::Properties;
 
 #[derive(Clone, PartialEq, Properties)]
-pub struct HeaderProps {
+pub struct MainProps {
     #[prop_or_default]
     pub children: Children,
-
-    #[prop_or_default]
-    pub height: String,
 }
 
-pub struct Header {
-    props: HeaderProps,
+pub struct Main {
+    props: MainProps,
 }
 
-impl Component for Header {
-    type Properties = HeaderProps;
+impl Component for Main {
+    type Properties = MainProps;
     type Message = ();
 
     fn create(props: Self::Properties, _link: ComponentLink<Self>) -> Self {
@@ -33,13 +30,8 @@ impl Component for Header {
     }
 
     fn view(&self) -> Html {
-        let style = if self.props.height == "" {
-            "height: 60px".to_owned()
-        } else {
-            format!("height: {};", self.props.height)
-        };
-        html!{
-            <header class="el-header" style=style>{for self.props.children.iter()}</header>
+        html! {
+            <main class="el-main">{for self.props.children.iter()}</main>
         }
     }
 

@@ -2,7 +2,7 @@ use yew::prelude::*;
 use yew::Properties;
 
 #[derive(Clone, PartialEq, Properties)]
-pub struct HeaderProps {
+pub struct FooterProps {
     #[prop_or_default]
     pub children: Children,
 
@@ -10,12 +10,12 @@ pub struct HeaderProps {
     pub height: String,
 }
 
-pub struct Header {
-    props: HeaderProps,
+pub struct Footer {
+    props: FooterProps,
 }
 
-impl Component for Header {
-    type Properties = HeaderProps;
+impl Component for Footer {
+    type Properties = FooterProps;
     type Message = ();
 
     fn create(props: Self::Properties, _link: ComponentLink<Self>) -> Self {
@@ -36,10 +36,10 @@ impl Component for Header {
         let style = if self.props.height == "" {
             "height: 60px".to_owned()
         } else {
-            format!("height: {};", self.props.height)
+            format!("height: {}", self.props.height)
         };
         html!{
-            <header class="el-header" style=style>{for self.props.children.iter()}</header>
+            <footer class="el-footer" style=style>{for self.props.children.iter()}</footer>
         }
     }
 

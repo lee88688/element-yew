@@ -5,11 +5,11 @@ This template shows how to create element ui components from yew.
 todo components:
 - [x] Row
 - [x] Col
-- [ ] Container
-- [ ] Header
-- [ ] Aside
-- [ ] Main
-- [ ] Footer
+- [x] Container
+- [x] Header
+- [x] Aside
+- [x] Main
+- [x] Footer
 - [ ] Button
 - [ ] Link
 
