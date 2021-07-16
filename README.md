@@ -15,7 +15,7 @@ basic
 - [x] Main
 - [x] Footer
 - [x] Button
-- [ ] Button Group
+- [x] Button Group
 - [ ] Link
 
 form

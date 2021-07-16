@@ -1,6 +1,7 @@
 use yew::prelude::*;
 use yew::Properties;
 use element::button::*;
+use element::button_group::*;
 
 #[derive(Clone, PartialEq, Properties)]
 pub struct ButtonPageProps {
@@ -91,6 +92,15 @@ impl Component for ButtonPage {
                     <Button icon="el-icon-check" btype=ButtonType::Info></Button>
                     <Button icon="el-icon-star-off" btype=ButtonType::Warning></Button>
                     <Button icon="el-icon-delete" btype=ButtonType::Danger>{"删除"}</Button>
+                </div>
+                <div>{"按钮组"}</div>
+                <div>
+                    <ButtonGroup>
+                        <Button btype=ButtonType::Primary icon="el-icon-arrow-left">{"上一页"}</Button>
+                        <Button btype=ButtonType::Primary>
+                            {"下一页"}<i class="el-icon-arrow-right el-icon--right"></i>
+                        </Button>
+                    </ButtonGroup>
                 </div>
                 <div>{"加载中"}</div>
                 <div>

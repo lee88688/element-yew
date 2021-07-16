@@ -6,3 +6,4 @@ pub mod aside;
 pub mod main;
 pub mod footer;
 pub mod button;
+pub mod button_group;
