@@ -40,5 +40,14 @@
             "",
             "}"
         ]
+    },
+    "yew enum": {
+        "prefix": "yew-enum",
+        "body": [
+            "#[derive(Clone, PartialEq)]",
+            "pub enum ${name} {",
+            "\t$0",
+            "}"
+        ]
     }
 }

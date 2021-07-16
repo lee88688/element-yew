@@ -5,3 +5,4 @@ pub mod header;
 pub mod aside;
 pub mod main;
 pub mod footer;
+pub mod button;
