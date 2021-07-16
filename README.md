@@ -1,6 +1,6 @@
 ## About
 
-element ui components from yew.
+element ui components for yew.
 
 ![button](./img/button.png)
 
