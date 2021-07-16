@@ -2,7 +2,11 @@
 
 element ui components from yew.
 
+![button](./img/button.png)
+
 todo components:
+
+basic
 - [x] Row
 - [x] Col
 - [x] Container
@@ -10,10 +14,36 @@ todo components:
 - [x] Aside
 - [x] Main
 - [x] Footer
-- [ ] Button
+- [x] Button
+- [ ] Button Group
 - [ ] Link
 
+form
+- [ ] Radio
+- [ ] Checkbox
+- [ ] Input
+- [ ] InputNumber
+- [ ] Select
+- [ ] Cascader
+- [ ] Switch
+- [ ] Slider
+- [ ] TimePicker
+- [ ] DatePicker
+- [ ] DateTimePicker
+- [ ] Upload
+- [ ] Rate
+- [ ] ColorPicker
+- [ ] Transfer
+- [ ] Form
+- [ ] FormItem
+
+data
+- [ ] Table
+- [ ] TableColumn
+
 ## 🚴 Usage
+
+look examples for usage.
 
 ### 🛠️ Build
 

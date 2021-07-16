@@ -4,6 +4,10 @@ mod components;
 
 pub use components::*;
 
+pub(crate) trait EnumStringName {
+    fn string_name(&self) -> String;
+}
+
 // use wasm_bindgen::prelude::*;
 
 // // When the `wee_alloc` feature is enabled, use `wee_alloc` as the global

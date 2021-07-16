@@ -1,8 +1,7 @@
 use log::*;
 use yew::{prelude::*};
-use element::{header::Header, container::Container, footer::Footer, aside::Aside, main::Main};
 
-// const KEY: &str = "yew.todomvc.self";
+use super::pages::button::ButtonPage;
 
 pub struct App {
 }
@@ -25,60 +24,8 @@ impl Component for App {
 
     fn view(&self) -> Html {
         info!("rendered!");
-        html! {
-            <div>
-                <Container>
-                    <Header height="400px">{"Header"}</Header>
-                    <Main>{"Main"}</Main>
-                </Container>
-
-                <Container>
-                    <Header>{"Header"}</Header>
-                    <Main>{"Main"}</Main>
-                    <Footer height="400px">{"Footer"}</Footer>
-                </Container>
-
-                <Container>
-                    <Aside width="200px">{"Aside"}</Aside>
-                    <Main>{"Main"}</Main>
-                </Container>
-                
-                <Container>
-                    <Header>{"Header"}</Header>
-                    <Container>
-                        <Aside width="200px">{"Aside"}</Aside>
-                        <Main>{"Main"}</Main>
-                    </Container>
-                </Container>
-                
-                <Container>
-                    <Header>{"Header"}</Header>
-                    <Container>
-                    <Aside width="200px">{"Aside"}</Aside>
-                    <Container>
-                        <Main>{"Main"}</Main>
-                        <Footer>{"Footer"}</Footer>
-                    </Container>
-                    </Container>
-                </Container>
-                
-                <Container>
-                    <Aside width="200px">{"Aside"}</Aside>
-                    <Container>
-                    <Header>{"Header"}</Header>
-                    <Main>{"Main"}</Main>
-                    </Container>
-                </Container>
-                
-                <Container>
-                    <Aside>{"Aside"}</Aside>
-                    <Container>
-                    <Header>{"Header"}</Header>
-                    <Main>{"Main"}</Main>
-                    <Footer>{"Footer"}</Footer>
-                    </Container>
-                </Container>
-            </div>
+        html!{
+            <ButtonPage/>
         }
     }
 }

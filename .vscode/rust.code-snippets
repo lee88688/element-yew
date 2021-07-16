@@ -49,5 +49,19 @@
             "\t$0",
             "}"
         ]
+    },
+    "prop or default": {
+        "prefix": "yew-prop",
+        "body": "#[prop_or_default]"
+    },
+    "impl default": {
+        "prefix": "impl-default",
+        "body": [
+            "impl Default for ${1} {",
+            "\tfn default() -> Self {",
+            "\t\t${2}",
+            "\t}",
+            "}"
+        ]
     }
 }

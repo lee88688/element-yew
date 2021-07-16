@@ -28,8 +28,6 @@ pub fn enum_string_macro(input: TokenStream) -> TokenStream {
         }
     };
 
-    println!("{}", expanded);
-
     // Hand the output tokens back to the compiler
     TokenStream::from(expanded)
 }
