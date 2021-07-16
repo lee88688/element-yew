@@ -16,3 +16,11 @@ pub fn my_macro(input: TokenStream) -> TokenStream {
     // Hand the output tokens back to the compiler
     TokenStream::from(expanded)
 }
+
+#[cfg(test)]
+mod tests {
+    #[test]
+    fn it_works() {
+        assert_eq!(2 + 2, 4);
+    }
+}

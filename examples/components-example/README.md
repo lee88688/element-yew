@@ -1,6 +1,6 @@
 ## About
 
-element ui components from yew.
+This template shows how to create element ui components from yew.
 
 todo components:
 - [x] Row

@@ -1,17 +1,14 @@
 use log::*;
 use yew::{prelude::*};
-use crate::components::{header::Header, container::Container, footer::Footer, aside::Aside, main::Main};
+use element::{header::Header, container::Container, footer::Footer, aside::Aside, main::Main};
 
 // const KEY: &str = "yew.todomvc.self";
 
 pub struct App {
 }
 
-pub enum Msg {
-}
-
 impl Component for App {
-    type Message = Msg;
+    type Message = ();
     type Properties = ();
 
     fn create(_: Self::Properties, _link: ComponentLink<Self>) -> Self {        
